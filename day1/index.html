@@ -1,5 +1,7 @@
  <!DOCTYPE html>
-<html>
+
+ <!-- define our angular app -->
+<html ng-app="scotchApp">
 <head>
 	<!-- Scrolls -->
 	<!-- load Bootstrap and fontawesome via CDN -->
@@ -12,7 +14,9 @@
 	<!-- load our app -->
 	<script src="script.js"></script>
 </head>
-<body>
+
+<!-- define our controller -->
+<body ng-controller="mainController">
 	<!-- Header and NavBar -->
 	<header>
 	<nav class="navbar navbar-default">
@@ -32,6 +36,8 @@
 
 	<!-- Main Content and Injected Views -->
 	<div id="main">
+
+		{{message}}
 
 		<!-- angular templating -->
 		<!-- this is where content will be injected -->
